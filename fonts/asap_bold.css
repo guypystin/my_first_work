@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Asap Bold';
+	src: url('../fonts/asap_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/asap_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/asap_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/asap_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/asap_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/asap_bold.svg#asap_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
