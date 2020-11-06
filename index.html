@@ -3,67 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<title>mysite</title>
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="icon" type="" sizes="16x16" href="img/favicon-16x16.png">
 	<script type="text/javascript" src=" https://code.jquery.com/jquery-1.11.2.js "></script>
+	<script type="text/javascript" src=" js/script.js "></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
 	<header>
-
-		
 		 <div class="menu clearfix" > 
-
 				<div class="container">
 				<div class="logo">
 					<a href="#home" >
 						<img src="img/logo.png" href="#home"  alt="">
 					</a>
 				</div>
-					<nav>
+				<nav>
 					<ul >
-
 						<li><a href="#footer">СВЯЗАТЬСЯ</a></li>
 						<li><a href="#six">РЕКОМЕНДАЦИИ</a></li>
 						<li><a href="#five">ПОРТФОЛИО</a></li>
 						<li><a href="#four">НАВЫКИ</a></li>
 						<li><a href="#three">УСЛУГИ</a></li>
 						<li><a href="#download">ОБО МНЕ</a></li>
-						<li><a href="#home">ДОМОЙ </a></li>
-						
-						
-						
-										
+						<li><a href="#home">ДОМОЙ </a></li>				
 					</ul>
-					</div>
-					</nav>
-				
+				</nav>
+				</div>
 			</div>
 			<div class="container">
-			<div class="content" id="home">
-						<div class="lefting">
+				<div class="content" id="home">
+					<div class="lefting">
 
-							<h1>
-								Льюис Онрик
-							</h1>
-							<p>
-								Эксперт По Пользовательскому Интерфейсу
-							</p>
-							<div class="buttons">
-								<a href="#download" class="button1">
+						<h1>
+							Льюис Онрик
+						</h1>
+
+						<p>
+							Эксперт По Пользовательскому Интерфейсу
+						</p>
+
+						<div class="buttons">
+							<a href="#download" class="button1">
 								УЗНАТЬ БОЛЬШЕ
-								</a>
-								<a href="#footer" class="button2">
+							</a>
+							<a href="#footer" class="button2">
 								НАНЯТЬ МЕНЯ
-								</a>
-							</div>
+							</a>
 						</div>
-						<div class="righting">
+					</div>
+					<div class="righting">
 							
-						</div>
+					</div>
+				</div>
 			</div>
-			</div>
-		</div>
 	</header>
 	<section id="download" id="about">
 		<div class="container">
@@ -260,40 +252,6 @@
 		
 		</div>
 	</section>
-	<script>
-		window.onscroll=function showHeader(){
-	var header = document.querySelector('.menu ');
-
-	if((window.pageYOffset >= 700)&&(window.pageYOffset < 5250)){
-		header.classList.add('header_fixed');
-	}
-	else {
-		header.classList.remove('header_fixed');
-	}
-		 if ((window.innerHeight + window.pageYOffset) >=document.body.offsetHeight) {
-       			
-    }
-    
-
-	
-}
-
-	const anchors = document.querySelectorAll('a[href*="#"')
-
-	for(let anchor of anchors){
-		anchor.addEventListener("click",function(event){
-			event.preventDefault();
-			const blockID = anchor.getAttribute('href')
-			document.querySelector(''+blockID).scrollIntoView({
-				behavior:"smooth",
-				block:"start"
-			})
-		})
-	}
-
-	
-
-	</script>
 	
 </body>
 </html>
